@@ -101,4 +101,49 @@ document.addEventListener('DOMContentLoaded', function() {
       iconBar.classList.toggle('collapsed');
     });
   });
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('disclaimer.json')
+      .then(response => response.json())
+      .then(data => {
+        const disclaimerContainer = document.getElementById('disclaimer-container');
+        const disclaimer = data.disclaimer;
+  
+        // Create and populate disclaimer elements
+        const title = document.createElement('h2');
+        title.textContent = disclaimer.title;
+        disclaimerContainer.appendChild(title);
+  
+        const message = document.createElement('p');
+        message.textContent = disclaimer.message;
+        disclaimerContainer.appendChild(message);
+  
+        const pointsList = document.createElement('ul');
+        disclaimer.points.forEach(point => {
+          const listItem = document.createElement('li');
+          if (typeof point === 'string') {
+            listItem.textContent = point;
+          } else if (point.subpoints && Array.isArray(point.subpoints)) {
+            listItem.textContent = point.text;
+            const subList = document.createElement('ul');
+            point.subpoints.forEach(subPoint => {
+              const subListItem = document.createElement('li');
+              const link = document.createElement('a');
+              link.href = subPoint.link;
+              link.textContent = subPoint.text;
+              link.target = '_blank';
+              subListItem.appendChild(link);
+              subList.appendChild(subListItem);
+            });
+            listItem.appendChild(subList);
+          }
+          pointsList.appendChild(listItem);
+        });
+        disclaimerContainer.appendChild(pointsList);
+  
+        const footer = document.createElement('p');
+        footer.textContent = disclaimer.footer;
+        disclaimerContainer.appendChild(footer);
+      })
+      .catch(error => console.error('Error fetching disclaimer:', error));
+  });
   
