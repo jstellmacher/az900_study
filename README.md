@@ -59,7 +59,7 @@ Example:
 
 ## Screenshots
 
-_Insert screenshots of the application in action if available._
+instead of looking at the screenshots, check it out! https://jstellmacher.github.io/az900_study/
 
 ## License
 
