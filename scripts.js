@@ -101,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
       iconBar.classList.toggle('collapsed');
     });
   });
-  document.addEventListener('DOMContentLoaded', () => {
+//   ----------------------------------------------Disclaimer
+  
+document.addEventListener('DOMContentLoaded', () => {
     fetch('disclaimer.json')
       .then(response => response.json())
       .then(data => {
@@ -110,7 +112,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
         // Create and populate disclaimer elements
         const title = document.createElement('h2');
-        title.textContent = disclaimer.title;
+        const icon = document.createElement('i');
+        icon.classList.add('fa', 'fa-info-circle', 'disclaimer-icon');
+        title.appendChild(icon);
+        title.appendChild(document.createTextNode(disclaimer.title));
         disclaimerContainer.appendChild(title);
   
         const message = document.createElement('p');
@@ -120,10 +125,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const pointsList = document.createElement('ul');
         disclaimer.points.forEach(point => {
           const listItem = document.createElement('li');
-          if (typeof point === 'string') {
-            listItem.textContent = point;
-          } else if (point.subpoints && Array.isArray(point.subpoints)) {
-            listItem.textContent = point.text;
+          listItem.textContent = point.text;
+  
+          if (point.subpoints && Array.isArray(point.subpoints)) {
             const subList = document.createElement('ul');
             point.subpoints.forEach(subPoint => {
               const subListItem = document.createElement('li');
@@ -136,6 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             listItem.appendChild(subList);
           }
+  
           pointsList.appendChild(listItem);
         });
         disclaimerContainer.appendChild(pointsList);

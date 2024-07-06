@@ -3,18 +3,30 @@
     "title": "Disclaimer",
     "message": "This study guide is created for my personal use to prepare for the AZ-900 Azure Fundamentals exam. The questions and answers provided are gathered from various online resources and are intended to aid my own study process. Please note the following:",
     "points": [
-      "If you choose to use this study guide, you do so at your own risk. I am not responsible for any loss or damage, including but not limited to, failure to pass the exam or any financial loss incurred (e.g., the $100 exam fee).",
-     "It is highly recommended to use additional study materials and resources to prepare for the AZ-900 exam. The resources I used include:",
       {
-        "text": "This guide is based on materials that helped me study, including:",
+        "text": "If you choose to use this study guide, you do so at your own risk. I am not responsible for any loss or damage, including but not limited to, failure to pass the exam or any financial loss incurred (e.g., the $100 exam fee)."
+      },
+      {
+        "text": "It is highly recommended to use additional study materials and resources to prepare for the AZ-900 exam. The resources I used include:",
         "subpoints": [
-          {"link": "https://github.com/AzureMentor/Azure-AZ-900-Study-Guide?tab=readme-ov-file", "text": "Azure Mentor Study Guide"},
-          {"link": "https://github.com/ricmmartins/study-guide-az900", "text": "Ric M. Martins Study Guide"},
-          {"link": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification", "text": "Microsoft Learn"}
+          {
+            "text": "AzureMentor/Azure-AZ-900-Study-Guide",
+            "link": "https://github.com/AzureMentor/Azure-AZ-900-Study-Guide?tab=readme-ov-file"
+          },
+          {
+            "text": "Ricmmartins/Study-Guide-AZ900",
+            "link": "https://github.com/ricmmartins/study-guide-az900"
+          },
+          {
+            "text": "Microsoft Learn: Azure Fundamentals",
+            "link": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification"
+          }
         ]
       },
-      "In my experience, the modules on Microsoft Learn were not sufficient by themselves, and I needed extra resources to fully prepare for the exam."
+      {
+        "text": "In my experience, the modules on Microsoft Learn were not sufficient by themselves, and I needed extra resources to fully prepare for the exam."
+      }
     ],
-    "footer": "Please make sure to collect your own study materials. All content, trademarks, and registered trademarks are the property of their respective owners. This site and its contents are not endorsed, sponsored by, or affiliated with Microsoft Corporation."
+    "footer": "All content, trademarks, and registered trademarks are the property of their respective owners. This site and its contents are not endorsed, sponsored by, or affiliated with Microsoft Corporation."
   }
 }
