@@ -1,16 +1,14 @@
-
 {
     "title": "About Me",
     "content": [
-      "Hello! I'm Jaichuang Stellmacher, a passionate developer currently focusing on learning and building in the tech industry.",
-      "I have experience in full-stack development, with a keen interest in cloud infrastructure, IAM, and data management.",
-      "Feel free to connect with me on social media:"
+        "Hello! I'm Jaichuang Stellmacher, a passionate developer with a focus on learning and building in the tech industry.",
+        "I bring experience in full-stack development, particularly interested in cloud infrastructure, IAM, and data management.",
+        "Connect with me on social media:"
     ],
     "socialLinks": [
-      { "platform": "GitHub", "link": "https://github.com/yourusername", "iconClass": "fa fa-github" },
-      { "platform": "LinkedIn", "link": "https://www.linkedin.com/in/yourusername", "iconClass": "fa fa-linkedin" },
-      { "platform": "YouTube", "link": "https://www.youtube.com/user/yourchannel", "iconClass": "fa fa-youtube" },
-      { "platform": "Website", "link": "https://yourwebsite.com", "iconClass": "fa fa-globe" }
+        { "platform": "GitHub", "link": "https://github.com/jstellmacher/", "iconClass": "fa fa-github" },
+        { "platform": "LinkedIn", "link": "https://www.linkedin.com/in/jaichuang-stellmacher", "iconClass": "fa fa-linkedin" },
+        { "platform": "YouTube", "link": "https://www.youtube.com/user/yourchannel", "iconClass": "fa fa-youtube" },
+        { "platform": "Website", "link": "https://yourwebsite.com", "iconClass": "fa fa-globe" }
     ]
-  }
-  
+}

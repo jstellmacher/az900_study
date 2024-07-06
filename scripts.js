@@ -27,34 +27,35 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Function to fetch and populate About section content
     function fetchAboutData() {
-      fetch('about.json')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('about-title').textContent = data.title;
-  
-          const aboutSection = document.getElementById('about-section');
-          data.content.forEach(paragraph => {
-            const p = document.createElement('p');
-            p.textContent = paragraph;
-            aboutSection.appendChild(p);
-          });
-  
-          const socialLinks = document.createElement('ul');
-          socialLinks.className = 'social-links';
-          data.socialLinks.forEach(link => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = link.link;
-            a.target = '_blank';
-            a.classList.add(`${link.platform.toLowerCase()}-icon`);
-            a.innerHTML = `<i class="${link.iconClass}"></i>`;
-            li.appendChild(a);
-            socialLinks.appendChild(li);
-          });
-          aboutSection.appendChild(socialLinks);
-        })
-        .catch(error => console.error('Error fetching About section data:', error));
-    }
+        fetch('about.json')
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('about-title').textContent = data.title;
+      
+            const aboutSection = document.getElementById('about-section');
+            data.content.forEach(paragraph => {
+              const p = document.createElement('p');
+              p.textContent = paragraph;
+              aboutSection.appendChild(p);
+            });
+      
+            const socialLinks = document.createElement('ul');
+            socialLinks.className = 'social-links';
+            data.socialLinks.forEach(link => {
+              const li = document.createElement('li');
+              const a = document.createElement('a');
+              a.href = link.link;
+              a.target = '_blank';
+              a.classList.add('social-icon', `${link.platform.toLowerCase()}-icon`); // Add 'social-icon' and platform-specific class
+              a.innerHTML = `<i class="${link.iconClass}"></i>`; // Include iconClass for specific icon styling
+              li.appendChild(a);
+              socialLinks.appendChild(li);
+            });
+            aboutSection.appendChild(socialLinks);
+          })
+          .catch(error => console.error('Error fetching About section data:', error));
+      }
+      
   
     // Function to fetch and populate accordion content
     function fetchAccordionData() {
