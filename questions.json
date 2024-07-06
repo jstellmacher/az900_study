@@ -1,15 +1,10 @@
 [
-    {
-      "question": "Question 1",
-      "answer": "Answer to question 1..."
-    },
-    {
-      "question": "Question 2",
-      "answer": "Answer to question 2..."
-    },
-    {
-      "question": "Question 3",
-      "answer": "Answer to question 3..."
-    }
-  ]
-  
+  {
+      "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure. This strategy should allow for connection types between the web servers and database servers to be controlled. Solution: You include network security groups (NSGs) in your strategy. Does the solution meet the goal?\nA: Yes\nB: No",
+      "answer": "Answer: A"
+  },
+  {
+      "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure. This strategy should allow for connection types between the web servers and database servers to be controlled. Solution: You include a local network gateway in your strategy. Does the solution meet the goal?\nA: Yes\nB: No",
+      "answer": "Answer: B"
+  }
+]
