@@ -91,3 +91,14 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchAccordionData();
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('toggle-btn');
+    const iconBar = document.getElementById('icon-bar');
+    const nav = document.querySelector('nav');
+  
+    toggleBtn.addEventListener('click', function() {
+      nav.classList.toggle('collapsed');
+      iconBar.classList.toggle('collapsed');
+    });
+  });
+  

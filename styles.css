@@ -50,6 +50,22 @@ nav {
     background-color: #005a9e; /* Azure Blue for active link */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
+.toggle-btn{
+    font-size: 28px; /* Adjust the font size of icons */
+    cursor: pointer;
+
+}
+
+nav.collapsed {
+    width: 0px;
+    background-color: rgba(245, 245, 245, 0); /* Collapsed width */
+    box-shadow: none;
+}
+
+nav.collapsed .icon-bar a {
+    display: none; /* Hide icons when collapsed */
+}
+
 
 /* Content Section */
 .content {
@@ -188,10 +204,12 @@ nav {
     color: #555; /* Placeholder color */
 }
 .subheader {
-     /* White background */
+    background-color: #ffffff; /* White background */
     max-width: 75vw;
     margin: 8px auto; /* Center the panel */
     border: 2px solid #005a9e; /* Border color and thickness */
     border-radius: 5px; /* Rounded corners */
     padding: 8px;
 }
+
+
