@@ -1,50 +1,69 @@
 body {
-  padding: 8px;
-
-  background-color: darkblue;
-}
-h1 {
-  padding: 8px;
-
-  margin: 2px;
-  text-align: center;
-  color: white;
-}
-h2 {
-  padding: 8px;
-  margin: 2px;
-  text-align: center;
-  color: white;
-}
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  border-radius: 25px;
-  margin-bottom: 2px;
-}
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  border-radius: 25px;
-  margin-bottom: 2px;
-  transition: max-height 0.2s ease-out;
-
-}
-.accordion:after {
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  nav {
+    width: 90px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 25px;
+    margin-bottom: 2px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 2px;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
@@ -55,11 +74,6 @@ h2 {
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
-  .icon-bar {
-    width: 90px; /* Set a specific width */
-    background-color: black;
-    border-radius: 25px; /* Dark-grey background */
-  }
   
   .icon-bar a {
     display: block; /* Make the links appear below each other instead of side-by-side */
@@ -67,16 +81,16 @@ h2 {
     padding: 16px; /* Add some padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: white; /* White text color */
-    font-size: 36px;
-    border-radius: 25px; /* Increased font-size */
+    font-size: 36px; /* Increased font-size */
+    margin-bottom: 10px;
+    border-radius: 25px;
   }
   
   .icon-bar a:hover {
     background-color: #000; /* Add a hover color */
-    border-radius: 25px;
   }
   
   .active {
     background-color: #04AA6D; /* Add an active/current color */
-    border-radius: 25px;
   }
+  

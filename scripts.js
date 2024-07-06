@@ -1,18 +1,26 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('questions.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('accordion-container');
+        data.forEach(item => {
+          const button = document.createElement('button');
+          button.classList.add('accordion');
+          button.textContent = item.question;
+  
+          const panel = document.createElement('div');
+          panel.classList.add('panel');
+          panel.innerHTML = `<p>${item.answer}</p>`;
+  
+          container.appendChild(button);
+          container.appendChild(panel);
+  
+          button.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const panel = this.nextElementSibling;
+            panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+      });
   });
-}
+  
