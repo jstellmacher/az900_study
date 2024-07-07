@@ -1,10 +1,1538 @@
 [
   {
-      "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure. This strategy should allow for connection types between the web servers and database servers to be controlled. Solution: You include network security groups (NSGs) in your strategy. Does the solution meet the goal?\nA: Yes\nB: No",
-      "answer": "Answer: A"
+    "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure. This strategy should allow for connection types between the web servers and database servers to be controlled. Solution: You include network security groups (NSGs) in your strategy. Does the solution meet the goal?\nA: Yes\nB: No",
+    "answer": "Answer: A"
   },
   {
-      "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure. This strategy should allow for connection types between the web servers and database servers to be controlled. Solution: You include a local network gateway in your strategy. Does the solution meet the goal?\nA: Yes\nB: No",
-      "answer": "Answer: B"
+    "question": "You are planning a strategy to deploy numerous web servers and database servers to Azure. This strategy should allow for connection types between the web servers and database servers to be controlled. Solution: You include a local network gateway in your strategy. Does the solution meet the goal?\nA: Yes\nB: No",
+    "answer": "Answer: B"
+  },
+  {
+    "question": "Your company's Active Directory forest includes thousands of user accounts. You have been informed that all network resources will be migrated to Azure. Thereafter, the on-premises data center will be retired. You are required to employ a strategy that reduces the effect on users, once the planned migration has been completed. Solution: You plan to require Azure Multi-Factor Authentication (MFA). Does the solution meet the goal?\nA: Yes\nB: No",
+    "answer": "Answer: B"
+  },
+  {
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.\n\nA platform as a service (PaaS) solution that hosts web apps in Azure provides full control of the operating systems that host applications.\na. Yes\nb. No\n\nA platform as a service solution that hosts web apps in Azure provides the ability to scale the platform automatically.\na. Yes\nb. No\n\nA platform as a service solution that hosts web apps in Azure provides professional development services to continuously add features to custom applications.\na. Yes\nb. Yes",
+    "answer": "Answer: \nBox 1: No - A PaaS solution does not provide access to the operating system. The Azure Web Apps service provides an environment for you to host your web applications.\nBehind the scenes, the web apps are hosted on virtual machines running IIS. However, you have no direct access to the virtual machine, the operating system or IIS.\n\nBox 2: Yes - A PaaS solution that hosts web apps in Azure does provide the ability to scale the platform automatically. This is known as autoscaling. Behind the scenes, the web apps are hosted on virtual machines running IIS. Autoscaling means adding more load balanced virtual machines to host the web apps.\n\nBox 3: Yes - PaaS provides a framework that developers can build upon to develop or customize cloud-based applications. PaaS development tools can cut the time it takes to code new apps with pre-coded application components built into the platform, such as workflow, directory services, security features, search and so on.\n\nReferences: https://azure.microsoft.com/en-gb/overview/what-is-paas/"
+  },
+  {
+    "question": "Placeholder question 1?",
+    "answer": "Answer: Placeholder 1"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 3?",
+    "answer": "Answer: Placeholder 3"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
+  },
+  {
+    "question": "Placeholder question 2?",
+    "answer": "Answer: Placeholder 2"
   }
 ]

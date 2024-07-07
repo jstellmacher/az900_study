@@ -61,28 +61,99 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('questions.json')
       .then(response => response.json())
       .then(data => {
-        const container = document.getElementById('accordion-container');
-        data.forEach(item => {
-          const button = document.createElement('button');
-          button.classList.add('accordion');
-          button.innerHTML = `${item.question.replace(/\n/g, '<br>')}`; // Replace newline characters with HTML line breaks
-
-          const panel = document.createElement('div');
-          panel.classList.add('panel');
-          panel.innerHTML = `<p>${item.answer}</p>`;
-
-          container.appendChild(button);
-          container.appendChild(panel);
-
-          button.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const panel = this.nextElementSibling;
-            panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+        const accordionContainer = document.getElementById('accordion-container');
+        const paginationContainer = document.getElementById('pagination');
+  
+        const itemsPerPage = 20; // Number of items per page
+        let currentPage = 1; // Track current page
+  
+        // Calculate total pages
+        const totalPages = Math.ceil(data.length / itemsPerPage);
+  
+        // Function to display questions for a given page
+        function displayQuestions(pageNumber) {
+          accordionContainer.innerHTML = ''; // Clear previous questions
+  
+          const startIndex = (pageNumber - 1) * itemsPerPage;
+          const endIndex = startIndex + itemsPerPage;
+          const pageQuestions = data.slice(startIndex, endIndex);
+  
+          pageQuestions.forEach(item => {
+            const button = document.createElement('button');
+            button.classList.add('accordion');
+            button.innerHTML = item.question.replace(/\n/g, '<br>');
+  
+            const panel = document.createElement('div');
+            panel.classList.add('panel');
+            panel.style.display = 'none'; // Hide panel by default
+            panel.innerHTML = `<p>${item.answer.replace(/\n/g, '<br>')}</p>`;
+  
+            accordionContainer.appendChild(button);
+            accordionContainer.appendChild(panel);
+  
+            button.addEventListener('click', function() {
+              this.classList.toggle('active');
+              if (panel.style.display === 'block') {
+                panel.style.display = 'none';
+              } else {
+                panel.style.display = 'block';
+              }
+            });
           });
-        });
+  
+          // Update current page
+          currentPage = pageNumber;
+          updatePaginationState();
+        }
+  
+        // Function to create pagination links
+        function createPaginationLinks() {
+          paginationContainer.innerHTML = ''; // Clear previous pagination links
+  
+          for (let i = 1; i <= totalPages; i++) {
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = i;
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              displayQuestions(i);
+            });
+  
+            paginationContainer.appendChild(link);
+  
+            if (i < totalPages) {
+              const separator = document.createTextNode(' ');
+              paginationContainer.appendChild(separator);
+            }
+          }
+  
+          // Initially set active class on first page link
+          updatePaginationState();
+        }
+  
+        // Function to update active state in pagination links
+        function updatePaginationState() {
+          const links = paginationContainer.getElementsByTagName('a');
+          for (let link of links) {
+            const pageNumber = parseInt(link.textContent);
+            if (pageNumber === currentPage) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          }
+        }
+  
+        // Initial display of questions (first page)
+        displayQuestions(1);
+        // Create pagination links after fetching data
+        createPaginationLinks();
       })
       .catch(error => console.error('Error fetching accordion data:', error));
   }
+  
+  
+      
 
 
   // Function to handle sidebar collapse toggle
