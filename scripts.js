@@ -224,3 +224,26 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => console.error('Error fetching disclaimer:', error));
 });
+function handleScrollToTop() {
+  const scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+
+  window.addEventListener('scroll', function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Call other initialization functions
+  handleScrollToTop(); // Call the scroll-to-top function
+});
