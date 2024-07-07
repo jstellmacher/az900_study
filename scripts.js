@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const accordionContainer = document.getElementById('accordion-container');
         const paginationContainer = document.getElementById('pagination');
   
-        const itemsPerPage = 20; // Number of items per page
+        const itemsPerPage = 10; // Number of items per page
         let currentPage = 1; // Track current page
   
         // Calculate total pages

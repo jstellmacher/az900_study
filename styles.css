@@ -1,343 +1,354 @@
 /* Reset and Basics ------------------------------------------------------------- */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f2f5; /* Light grey background */
-    font-family: "Roboto", sans-serif; /* Modern font */
-    display: flex;
-    min-height: 100vh; /* Ensure the body fills the viewport */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Light grey background */
+  font-family: "Roboto", sans-serif; /* Modern font */
+  display: flex;
+  min-height: 100vh; /* Ensure the body fills the viewport */
 }
 
 .container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 /* Navigation -------------------------------------------------------------*/
 nav {
-    width: 8vw; /* Adjust width for more space for navigation */
-    background-color: #0078d4; /* Azure Blue */
-    padding: 10px;
-    border-radius: 0 5px 5px 0; /* Slightly rounded corners */
-    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Soft shadow effect */
-    height:100%;
+  width: 7vw; /* Adjust width for more space for navigation */
+  background-color: #0078d4; /* Azure Blue */
+  padding: 10px;
+  border-radius: 0 10px 10px 0; /* Slightly rounded corners */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.715); /* Soft shadow effect */
 }
 
 .icon-bar {
-    margin-bottom: auto; /* Pushes icon-bar to the top */
-    margin-top: 8vh;
-    position: fixed;
-    z-index: 100;
-    transition: width 0.3s ease; /* Smooth transition for collapse */
+  margin-bottom: auto; /* Pushes icon-bar to the top */
+  margin-top: 8vh;
+  position: fixed;
+  z-index: 100;
+  transition: width 0.2s ease; /* Smooth transition for collapse */
 }
 
 .icon-bar a {
-    display: block; /* Make the links appear below each other */
-    text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    color: #ffffff; /* White text color */
-    font-size: 24px; /* Slightly smaller font-size for icons */
-    margin-bottom: 10px; /* Space between icons */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.741); /* Soft shadow effect */
-    background-color: #0078d4;
+  display: block; /* Make the links appear below each other */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  color: #ffffff; /* White text color */
+  font-size: 24px; /* Slightly smaller font-size for icons */
+  margin-bottom: 10px; /* Space between icons */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.916); /* Soft shadow effect */
+  background-color: #0078d4;
 }
 
 .icon-bar a:hover {
-    background-color: #005a9e; /* Darker Azure Blue on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+  background-color: #005a9e; /* Darker Azure Blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
 }
 
 .icon-bar a.active {
-    background-color: #005a9e; /* Azure Blue for active link */
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.688); /* Soft shadow effect */
+  background-color: #005a9e; /* Azure Blue for active link */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.688); /* Soft shadow effect */
 }
 
 /* Toggle Button -------------------------------------------------------------*/
 .toggle-btn {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-    font-size: 30px;
-    cursor: pointer;
-    color: #ffffff;
-    padding: auto;
-    border: none;
-    background-color:#005a9e;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width:7vw;
-
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: auto;
+  border: none;
+  background-color: #005a9e;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 7vw;
 }
 
 .toggle-btn:hover {
-    background-color: #0078d4;
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    border: none;
+  background-color: #0078d4;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: none;
 }
 
 .toggle-btn:focus {
-    outline: none; /* Remove focus outline */
+  outline: none; /* Remove focus outline */
 }
 
 .toggle-btn:active {
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: rgb(255, 0, 0);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 0, 0);
 }
 
 /* Collapsed Navigation -------------------------------------------------------------*/
 nav.collapsed {
-    width: 0px; /* Collapsed width */
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: none;
+  width: 0px; /* Collapsed width */
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
 }
 
 nav.collapsed .icon-bar a {
-    display: none; /* Hide icons when collapsed */
+  display: none; /* Hide icons when collapsed */
 }
 
 /* Content Section */
 .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    color: #333; /* Dark grey text color */
-    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #333; /* Dark grey text color */
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
 }
 
 #page-title,
 #about-title {
-    text-align: center;
-    color: #0078d4; /* Azure Blue for titles */
+  text-align: center;
+  color: #0078d4; /* Azure Blue for titles */
 }
 
 .content h2 {
-    text-align: center;
-    margin: 10px 0; /* Adjusted margin */
-    color: #333; /* Dark grey text color */
-    font-size: 1.5rem; /* Slightly smaller font size than h1 */
-    line-height: 1.6; /* Improved line height for readability */
-    font-weight: 500; /* Medium font weight */
+  text-align: center;
+  margin: 10px 0; /* Adjusted margin */
+  color: #333; /* Dark grey text color */
+  font-size: 1.5rem; /* Slightly smaller font size than h1 */
+  line-height: 1.6; /* Improved line height for readability */
+  font-weight: 500; /* Medium font weight */
 }
 
 /* Accordion -------------------------------------------------------------*/
 /* Accordion -------------------------------------------------------------*/
 #accordion-container {
-    margin-top: 20px; /* Add margin to create space between headings and content */
+  margin-top: 20px; /* Add margin to create space between headings and content */
 }
 
 .accordion {
-    background-color: #ffffff; /* White background */
-    color: #333; /* Dark grey text color */
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: 1px solid #ddd; /* Light grey border */
-    outline: none;
-    transition: 0.4s;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Add space between accordion items */
-    box-shadow: 0 2px 4px rgba(2, 2, 2, 0.5); /* Soft shadow effect */
-    line-height: 1.6; /* Increase line height */
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark grey text color */
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ddd; /* Light grey border */
+  outline: none;
+  transition: 0.4s;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add space between accordion items */
+  box-shadow: 0 2px 4px rgba(2, 2, 2, 0.5); /* Soft shadow effect */
+  line-height: 1.6; /* Increase line height */
 }
 
 .accordion:hover {
-    background-color: #f9f9f9; /* Light grey background on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+  background-color: #f9f9f9; /* Light grey background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
 
 .active,
 .accordion.active {
-    background-color: #f9f9f9; /* Light grey background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+  background-color: #f9f9f9; /* Light grey background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
 
 .panel {
-    padding: 20px; /* Increased padding */
-    background-color: #6FCF97; /* Light grey background */
-    display: none;
-    overflow: hidden;
-    border-radius: 5px;
-    max-width: 80vw; /* Set the max-width */
-    width: 100%;
-    margin: 0 auto; /* Center the panel */
-    margin-bottom: 10px; /* Add space below the panel */
-    transition: max-height 0.2s ease-out;
-    box-shadow: inset 0 2px 4px rgba(2, 2, 2, 0.5); /* Soft shadow effect */
-    line-height: 1.6; /* Increase line height */
+  padding: 20px; /* Increased padding */
+  background-color: #6fcf97; /* Light grey background */
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  max-width: 80vw; /* Set the max-width */
+  width: 100%;
+  margin: 0 auto; /* Center the panel */
+  margin-bottom: 10px; /* Add space below the panel */
+  transition: max-height 0.2s ease-out;
+  box-shadow: inset 0 2px 4px rgba(2, 2, 2, 0.5); /* Soft shadow effect */
+  line-height: 1.6; /* Increase line height */
 }
 
 .panel.active {
-    display: block; /* Show active panel */
+  display: block; /* Show active panel */
 }
 
 .accordion-icon {
-    font-size: 16px; /* Adjust icon size */
-    color: #777; /* Light grey for icon color */
-    margin-left: 5px; /* Space between icon and text */
+  font-size: 16px; /* Adjust icon size */
+  color: #777; /* Light grey for icon color */
+  margin-left: 5px; /* Space between icon and text */
 }
 
 .accordion::after {
-    content: "\02795"; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
 
 .active::after,
 .accordion.active::after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* About Section */
 .about-section {
-    background-color: #ffffff; /* White background */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
 }
 
 .about-section p {
-    margin-bottom: 15px; /* Space between paragraphs */
+  margin-bottom: 15px; /* Space between paragraphs */
 }
 
 /* Social Links -------------------------------------------------------------*/
 .social-links {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    text-align: center; /* Center-align social links */
-    margin-top: 20px; /* Add margin above social links */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  text-align: center; /* Center-align social links */
+  margin-top: 20px; /* Add margin above social links */
 }
 
 .social-links li {
-    display: inline-block;
-    margin: 0 15px; /* Increased space between social links */
+  display: inline-block;
+  margin: 0 15px; /* Increased space between social links */
 }
 
 .social-links a {
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color transition */
-    font-size: 28px; /* Adjust the font size of icons */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+  font-size: 28px; /* Adjust the font size of icons */
 }
 
 .social-links a:hover {
-    color: #0078d4; /* Azure Blue color on hover */
+  color: #0078d4; /* Azure Blue color on hover */
 }
 
 /* Icon Colors */
 .github-icon {
-    color: #333; /* Dark grey for GitHub */
+  color: #333; /* Dark grey for GitHub */
 }
 
 .linkedin-icon {
-    color: #0e76a8; /* LinkedIn blue */
+  color: #0e76a8; /* LinkedIn blue */
 }
 
 .youtube-icon {
-    color: #ff0000; /* YouTube red */
+  color: #ff0000; /* YouTube red */
 }
 
 .website-icon {
-    color: #555; /* Placeholder color */
+  color: #555; /* Placeholder color */
 }
 
 /* Subheader -------------------------------------------------------------*/
 .subheader {
-    background-color: #ffffff; /* White background */
-    max-width: 75vw;
-    margin: 8px auto; /* Center the panel */
-    border: 2px solid #005a9e; /* Border color and thickness */
-    border-radius: 5px; /* Rounded corners */
-    padding: 8px;
+  background-color: #ffffff; /* White background */
+  max-width: 75vw;
+  margin: 8px auto; /* Center the panel */
+  border: 2px solid #005a9e; /* Border color and thickness */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px;
 }
 
 /* Disclaimer -------------------------------------------------------------*/
 .disclaimer {
-    background-color: #f3f9fe; /* Light blue background */
-    border: 1px solid #0078d4; /* Azure blue border */
-    border-radius: 8px;
-    padding: 16px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f3f9fe; /* Light blue background */
+  border: 1px solid #0078d4; /* Azure blue border */
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .disclaimer h2 {
-    color: #0078d4; /* Azure blue */
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center; /* Align icon and text */
+  color: #0078d4; /* Azure blue */
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center; /* Align icon and text */
 }
 
 .disclaimer-icon {
-    color: #0078d4; /* Azure blue for icon */
-    margin-right: 8px; /* Space between icon and text */
+  color: #0078d4; /* Azure blue for icon */
+  margin-right: 8px; /* Space between icon and text */
 }
 
 .disclaimer p,
 .disclaimer ul {
-    color: #333;
-    margin: 8px 0;
+  color: #333;
+  margin: 8px 0;
 }
 
 .disclaimer ul {
-    padding-left: 20px; /* Indent main bullets */
+  padding-left: 20px; /* Indent main bullets */
 }
 
 .disclaimer ul li {
-    margin-bottom: 10px; /* Add space between main bullet points */
-    line-height: 1.5; /* Increase line height for better readability */
+  margin-bottom: 10px; /* Add space between main bullet points */
+  line-height: 1.5; /* Increase line height for better readability */
 }
 
 .disclaimer ul ul {
-    margin-top: 8px;
-    padding-left: 20px; /* Further indent sub-bullets */
-    list-style-type: circle; /* Change the style of sub-bullets */
+  margin-top: 8px;
+  padding-left: 20px; /* Further indent sub-bullets */
+  list-style-type: circle; /* Change the style of sub-bullets */
 }
 
 .disclaimer ul ul li {
-    margin-bottom: 8px; /* Add space between nested bullet points */
+  margin-bottom: 8px; /* Add space between nested bullet points */
 }
 
 .disclaimer ul ul a {
-    text-decoration: none; /* Remove underline from links */
-    color: #005a9e; /* Darker Azure blue for links */
+  text-decoration: none; /* Remove underline from links */
+  color: #005a9e; /* Darker Azure blue for links */
 }
 
 .disclaimer ul ul a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+  text-decoration: underline; /* Underline on hover for links */
 }
-
+/* pagination ------------------------------------------------------------------------------------------- */
 .pagination-container {
     margin-top: 20px;
     overflow-x: auto; /* Enable horizontal scrolling if needed */
     white-space: nowrap; /* Prevent wrapping of pagination links */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center align content horizontally */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding:8px;
   }
   
-  .pagination-container a {
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 4px;
-    background-color: #e9ecef; /* Light gray background */
-    color: #333;
-    text-decoration: none;
-    border: 1px solid #ced4da; /* Light border */
-    border-radius: 4px;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-  }
-  
-  .pagination-container a:hover {
-    background-color: #ccc; /* Darker background on hover */
-  }
-  
-  .pagination-container a.active {
-    background-color: #007bff; /* Active page background color */
-    color: #fff; /* Active page text color */
-  }
-  
+
+.pagination-container a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 4px;
+  background-color: #323232; /* Light gray background */
+  color: #ffffff;
+  text-decoration: none;
+  border: none; /* Light border */
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.pagination-container a:hover {
+  background-color: #007bff; /* Darker background on hover */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.pagination-container a.active {
+  background-color: #007bff; /* Active page background color */
+  color: #fff; /* Active page text color */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+
+}
