@@ -1,0 +1,107 @@
+[
+  {
+    "question_number": "1",
+    "question_text": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.\nYou are planning a strategy to deploy numerous web servers and database servers to Azure.\nThis strategy should allow for connection types between the web servers and database servers to be controlled.\nSolution: You include network security groups (NSGs) in your strategy.\nDoes the solution meet the goal?",
+    "question_image": null,
+    "answer_text": "Answer : \nA",
+    "answer_image": null
+  },
+  {
+    "question_number": "2",
+    "question_text": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.\nYou are planning a strategy to deploy numerous web servers and database servers to Azure.\nThis strategy should allow for connection types between the web servers and database servers to be controlled.\nSolution: You include a local network gateway in your strategy.\nDoes the solution meet the goal?",
+    "question_image": null,
+    "answer_text": "Answer : \nB",
+    "answer_image": null
+  },
+  {
+    "question_number": "3",
+    "question_text": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.\nYour company's Active Directory forest includes thousands of user accounts.\nYou have been informed that all network resources will be migrated to Azure. Thereafter, the on-premises data center will be retired.\nYou are required to employ a strategy that reduces the effect on users, once the planned migration has been completed.\nSolution: You plan to require Azure Multi-Factor Authentication (MFA).\nDoes the solution meet the goal?",
+    "question_image": null,
+    "answer_text": "Answer : \nA",
+    "answer_image": null
+  },
+  {
+    "question_number": "4",
+    "question_text": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+    "question_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0002600001.jpg",
+    "answer_text": "Answer :",
+    "answer_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0002700001.jpg"
+  },
+  {
+    "question_number": "5",
+    "question_text": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+    "question_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0002900001.png",
+    "answer_text": "Answer :",
+    "answer_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003000001.png"
+  },
+  {
+    "question_number": "6",
+    "question_text": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+    "question_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003100001.png",
+    "answer_text": "Answer :",
+    "answer_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003200001.png"
+  },
+  {
+    "question_number": "7",
+    "question_text": "You have an on-premises network that contains several servers.\nYou plan to migrate all the servers to Azure.\nYou need to recommend a solution to ensure that some of the servers are available if a single Azure data center goes offline for an extended period.\nWhat should you include in the recommendation?",
+    "question_image": null,
+    "answer_text": "Answer : \nA",
+    "answer_image": null
+  },
+  {
+    "question_number": "8",
+    "question_text": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+    "question_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003400001.jpg",
+    "answer_text": "Answer :",
+    "answer_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003400002.jpg"
+  },
+  {
+    "question_number": "9",
+    "question_text": "What are two characteristics of the public cloud? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+    "question_image": null,
+    "answer_text": "Answer : \nDE",
+    "answer_image": null
+  },
+  {
+    "question_number": "10",
+    "question_text": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+    "question_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003600001.png",
+    "answer_text": "Answer :",
+    "answer_image": "https://img.certlibrary.com/assets/media/exam-media/04227/0003600002.png"
+  },
+  {
+    "question_number": "11",
+    "question_text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYour company plans to migrate all its data and resources to Azure.\nThe company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure SQL databases.\nDoes this meet the goal?",
+    "question_image": null,
+    "answer_text": "Answer : \nA",
+    "answer_image": null
+  },
+  {
+    "question_number": "12",
+    "question_text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYour company plans to migrate all its data and resources to Azure.\nThe company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed.\nDoes this meet the goal?",
+    "question_image": null,
+    "answer_text": "Answer : \nA",
+    "answer_image": null
+  },
+  {
+    "question_number": "13",
+    "question_text": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYour company plans to migrate all its data and resources to Azure.\nThe company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure.\nYou need to deploy an Azure environment that meets the company migration plan.\nSolution: You create an Azure App Service and Azure Storage accounts.\nDoes this meet the goal?",
+    "question_image": null,
+    "answer_text": "Answer : \nB",
+    "answer_image": null
+  },
+  {
+    "question_number": "14",
+    "question_text": "Your company hosts an accounting application named App1 that is used by all the customers of the company.\nApp1 has low usage during the first three weeks of each month and very high usage during the last week of each month.\nWhich benefit of Azure Cloud Services supports cost management for this type of usage pattern?",
+    "question_image": null,
+    "answer_text": "Answer : \nC",
+    "answer_image": null
+  },
+  {
+    "question_number": "15",
+    "question_text": "You plan to migrate a web application to Azure. The web application is accessed by external users.\nYou need to recommend a cloud deployment solution to minimize the amount of administrative effort used to manage the web application.\nWhat should you include in the recommendation?",
+    "question_image": null,
+    "answer_text": "Answer : \nB",
+    "answer_image": null
+  }
+]

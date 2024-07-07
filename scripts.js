@@ -58,39 +58,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to fetch and populate accordion content
   function fetchAccordionData() {
-    fetch('questions.json')
+    fetch('az900_questions_answers.json')
       .then(response => response.json())
       .then(data => {
         const accordionContainer = document.getElementById('accordion-container');
         const paginationContainer = document.getElementById('pagination');
-
+  
         const itemsPerPage = 10; // Number of items per page
         let currentPage = 1; // Track current page
-
+  
         // Calculate total pages
         const totalPages = Math.ceil(data.length / itemsPerPage);
-
+  
         // Function to display questions for a given page
         function displayQuestions(pageNumber) {
           accordionContainer.innerHTML = ''; // Clear previous questions
-
+  
           const startIndex = (pageNumber - 1) * itemsPerPage;
           const endIndex = startIndex + itemsPerPage;
           const pageQuestions = data.slice(startIndex, endIndex);
-
+  
           pageQuestions.forEach(item => {
             const button = document.createElement('button');
             button.classList.add('accordion');
-            button.innerHTML = item.question.replace(/\n/g, '<br>');
-
+            button.innerHTML = item.question_text.replace(/\n/g, '<br>');
+  
             const panel = document.createElement('div');
             panel.classList.add('panel');
             panel.style.display = 'none'; // Hide panel by default
-            panel.innerHTML = `<p>${item.answer.replace(/\n/g, '<br>')}</p>`;
-
+  
+            // Check if there's a question image
+            if (item.question_image) {
+              const img = document.createElement('img');
+              img.src = item.question_image;
+              panel.appendChild(img);
+            }
+  
+            const answerParagraph = document.createElement('p');
+            answerParagraph.innerHTML = item.answer_text.replace(/\n/g, '<br>');
+  
+            // Check if there's an answer image
+            if (item.answer_image) {
+              const img = document.createElement('img');
+              img.src = item.answer_image;
+              panel.appendChild(img);
+            }
+  
+            panel.appendChild(answerParagraph);
+  
             accordionContainer.appendChild(button);
             accordionContainer.appendChild(panel);
-
+  
             button.addEventListener('click', function() {
               this.classList.toggle('active');
               if (panel.style.display === 'block') {
@@ -100,16 +118,16 @@ document.addEventListener('DOMContentLoaded', function() {
               }
             });
           });
-
+  
           // Update current page
           currentPage = pageNumber;
           updatePaginationState();
         }
-
+  
         // Function to create pagination links
         function createPaginationLinks() {
           paginationContainer.innerHTML = ''; // Clear previous pagination links
-
+  
           for (let i = 1; i <= totalPages; i++) {
             const link = document.createElement('a');
             link.href = '#';
@@ -118,19 +136,19 @@ document.addEventListener('DOMContentLoaded', function() {
               event.preventDefault();
               displayQuestions(i);
             });
-
+  
             paginationContainer.appendChild(link);
-
+  
             if (i < totalPages) {
               const separator = document.createTextNode(' ');
               paginationContainer.appendChild(separator);
             }
           }
-
+  
           // Initially set active class on first page link
           updatePaginationState();
         }
-
+  
         // Function to update active state in pagination links
         function updatePaginationState() {
           const links = paginationContainer.getElementsByTagName('a');
@@ -143,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
           }
         }
-
+  
         // Initial display of questions (first page)
         displayQuestions(1);
         // Create pagination links after fetching data
@@ -151,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Error fetching accordion data:', error));
   }
-
+  
   // Function to handle sidebar collapse toggle
   function handleSidebarCollapse() {
     const toggleBtn = document.getElementById('toggle-btn');
