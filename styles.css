@@ -15,80 +15,101 @@ body {
 
 /* Navigation -------------------------------------------------------------*/
 nav {
-    width: calc(7vw + 2px); /* Adjust width for more space for navigation */
-    background-color: #0078d4; /* Azure Blue */
-    padding: 10px;
-    border-radius: 0 10px 10px 0; /* Slightly rounded corners */
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.715); /* Soft shadow effect */
-  }
-  
-  .icon-bar {
-    width: 7vw; /* Fixed width for icon bar */
-    margin-bottom: auto; /* Pushes icon-bar to the top */
-    margin-top: 8vh;
-    position: fixed;
-    z-index: 100;
-    transition: width 0.2s ease; /* Smooth transition for collapse */
-  }
-  
-  .icon-bar a {
-    display: block; /* Make the links appear below each other */
-    text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    color: #ffffff; /* White text color */
-    font-size: 24px; /* Slightly smaller font-size for icons */
-    margin-bottom: 10px; /* Space between icons */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.916); /* Soft shadow effect */
-    background-color: #0078d4;
-  }
-  
-  .icon-bar a:hover {
-    background-color: #005a9e; /* Darker Azure Blue on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
-  }
-  
-  .icon-bar a.active {
-    background-color: #005a9e; /* Azure Blue for active link */
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.688); /* Soft shadow effect */
-  }
-  
-  /* Toggle Button -------------------------------------------------------------*/
-  .toggle-btn {
-    width: 7vw; /* Fixed width for toggle button */
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-    font-size: 30px;
-    cursor: pointer;
-    color: #ffffff;
-    padding: auto;
-    border: none;
-    background-color: #005a9e;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .toggle-btn:hover {
-    background-color: #0078d4;
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .toggle-btn:focus {
-    outline: none; /* Remove focus outline */
-  }
-  
-  .toggle-btn:active {
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: rgb(255, 0, 0);
-  }
-  
+  width: calc(7vw + 2px); /* Adjust width for more space for navigation */
+  background-color: #0078d4; /* Azure Blue */
+  padding: 10px;
+  border-radius: 0 10px 10px 0; /* Slightly rounded corners */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.715); /* Soft shadow effect */
+}
 
+.icon-bar {
+  width: 7vw; /* Fixed width for icon bar */
+  margin-bottom: auto; /* Pushes icon-bar to the top */
+  margin-top: 8vh;
+  position: fixed;
+  z-index: 100;
+  transition: width 0.2s ease; /* Smooth transition for collapse */
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  color: #ffffff; /* White text color */
+  font-size: 24px; /* Slightly smaller font-size for icons */
+  margin-bottom: 10px; /* Space between icons */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.916); /* Soft shadow effect */
+  background-color: #0078d4;
+}
+
+.icon-bar a:hover {
+  background-color: none; /* Darker Azure Blue on hover */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+}
+
+.icon-bar a.active {
+  background-color: #005a9e; /* Azure Blue for active link */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.688); /* Soft shadow effect */
+  text-decoration: none; /* Remove underlines */
+}
+.icon-bar a.active::after {
+  content: ""; /* Empty content */
+}
+
+/* Toggle Button -------------------------------------------------------------*/
+.toggle-btn {
+  width: 7vw; /* Fixed width for toggle button */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: auto;
+  border: none;
+  background-color: #005a9e;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-btn:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: none;
+}
+
+.toggle-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+
+
+#toggle-btn {
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#toggle-btn.active {
+  width: 7vw; /* Fixed width for toggle button */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: auto;
+  border: none;
+  background-color: #005a9e;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.toggle-btn.active::after {
+    content: ""; /* Empty content */
+  }
 /* Collapsed Navigation -------------------------------------------------------------*/
 nav.collapsed {
   width: 0px; /* Collapsed width */
@@ -315,16 +336,15 @@ nav.collapsed .icon-bar a {
 }
 /* pagination ------------------------------------------------------------------------------------------- */
 .pagination-container {
-    margin-top: 20px;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    white-space: nowrap; /* Prevent wrapping of pagination links */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center; /* Center align content horizontally */
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding:8px;
-  }
-  
+  margin-top: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent wrapping of pagination links */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Center align content horizontally */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+}
 
 .pagination-container a {
   display: inline-block;
@@ -337,13 +357,11 @@ nav.collapsed .icon-bar a {
   border-radius: 4px;
   transition: background-color 0.3s ease; /* Smooth transition for background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
 }
 
 .pagination-container a:hover {
   background-color: #007bff; /* Darker background on hover */
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
-
 }
 
 .pagination-container a.active {
@@ -352,29 +370,26 @@ nav.collapsed .icon-bar a {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 5px;
-
 }
 /* scroll to top button---------------------------------------------- */
 .scroll-to-top-btn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: none;
-    color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 14px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
-    transition: background-color 0.3s ease;
-    font-size: 26px;
-  }
-  
-  .scroll-to-top-btn:hover {
-    background-color: #0057b300;
-    color:white;
-    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: none;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 14px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+  font-size: 26px;
+}
 
-  }
-  
+.scroll-to-top-btn:hover {
+  background-color: #0057b300;
+  color: white;
+  box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.7);
+}

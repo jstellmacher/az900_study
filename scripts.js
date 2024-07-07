@@ -157,12 +157,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleBtn = document.getElementById('toggle-btn');
     const iconBar = document.getElementById('icon-bar');
     const nav = document.querySelector('nav');
-
+  
     toggleBtn.addEventListener('click', function() {
       nav.classList.toggle('collapsed');
       iconBar.classList.toggle('collapsed');
+      toggleBtn.classList.toggle('active'); // Toggle the 'active' class on toggleBtn
     });
   }
+  const toggleBtn = document.getElementById('toggle-btn');
+    const barsIcon = document.getElementById('bars-icon');
+    const timesIcon = document.getElementById('times-icon');
+
+    // Initially hide barsIcon and show timesIcon
+    barsIcon.style.display = 'none'; // or set in CSS
+    timesIcon.style.display = 'inline-block'; // or set in CSS
+
+    toggleBtn.addEventListener('click', function() {
+      barsIcon.style.display = barsIcon.style.display === 'none' ? 'inline-block' : 'none';
+      timesIcon.style.display = timesIcon.style.display === 'none' ? 'inline-block' : 'none';
+    });
+  
 
   // Call functions to initialize page elements
   createNavigationLinks();
