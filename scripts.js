@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navigationLinks = [
       { title: 'Home', iconClass: 'fa fa-home', link: 'index.html' },
       { title: 'About Me', iconClass: 'fa fa-user', link: 'about.html' }
-      // Add more navigation links as needed
     ];
 
     const iconBar = document.getElementById('icon-bar');
+    iconBar.innerHTML = ''; // Clear only the icon bar content
 
     navigationLinks.forEach(link => {
       const linkElement = document.createElement('a');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to check if a link should be active based on the current page URL
   function isActiveLink(link) {
-    return window.location.pathname === `/${link}`;
+    return window.location.pathname.endsWith(link);
   }
 
   // Function to fetch and populate About section content
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
           const a = document.createElement('a');
           a.href = link.link;
           a.target = '_blank';
-          a.classList.add('social-icon', `${link.platform.toLowerCase()}-icon`); // Add 'social-icon' and platform-specific class
-          a.innerHTML = `<i class="${link.iconClass}"></i>`; // Include iconClass for specific icon styling
+          a.classList.add('social-icon', `${link.platform.toLowerCase()}-icon`);
+          a.innerHTML = `<i class="${link.iconClass}"></i>`;
           li.appendChild(a);
           socialLinks.appendChild(li);
         });
@@ -63,34 +63,34 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(data => {
         const accordionContainer = document.getElementById('accordion-container');
         const paginationContainer = document.getElementById('pagination');
-  
+
         const itemsPerPage = 10; // Number of items per page
         let currentPage = 1; // Track current page
-  
+
         // Calculate total pages
         const totalPages = Math.ceil(data.length / itemsPerPage);
-  
+
         // Function to display questions for a given page
         function displayQuestions(pageNumber) {
           accordionContainer.innerHTML = ''; // Clear previous questions
-  
+
           const startIndex = (pageNumber - 1) * itemsPerPage;
           const endIndex = startIndex + itemsPerPage;
           const pageQuestions = data.slice(startIndex, endIndex);
-  
+
           pageQuestions.forEach(item => {
             const button = document.createElement('button');
             button.classList.add('accordion');
             button.innerHTML = item.question.replace(/\n/g, '<br>');
-  
+
             const panel = document.createElement('div');
             panel.classList.add('panel');
             panel.style.display = 'none'; // Hide panel by default
             panel.innerHTML = `<p>${item.answer.replace(/\n/g, '<br>')}</p>`;
-  
+
             accordionContainer.appendChild(button);
             accordionContainer.appendChild(panel);
-  
+
             button.addEventListener('click', function() {
               this.classList.toggle('active');
               if (panel.style.display === 'block') {
@@ -100,16 +100,16 @@ document.addEventListener('DOMContentLoaded', function() {
               }
             });
           });
-  
+
           // Update current page
           currentPage = pageNumber;
           updatePaginationState();
         }
-  
+
         // Function to create pagination links
         function createPaginationLinks() {
           paginationContainer.innerHTML = ''; // Clear previous pagination links
-  
+
           for (let i = 1; i <= totalPages; i++) {
             const link = document.createElement('a');
             link.href = '#';
@@ -118,19 +118,19 @@ document.addEventListener('DOMContentLoaded', function() {
               event.preventDefault();
               displayQuestions(i);
             });
-  
+
             paginationContainer.appendChild(link);
-  
+
             if (i < totalPages) {
               const separator = document.createTextNode(' ');
               paginationContainer.appendChild(separator);
             }
           }
-  
+
           // Initially set active class on first page link
           updatePaginationState();
         }
-  
+
         // Function to update active state in pagination links
         function updatePaginationState() {
           const links = paginationContainer.getElementsByTagName('a');
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
           }
         }
-  
+
         // Initial display of questions (first page)
         displayQuestions(1);
         // Create pagination links after fetching data
@@ -151,10 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Error fetching accordion data:', error));
   }
-  
-  
-      
-
 
   // Function to handle sidebar collapse toggle
   function handleSidebarCollapse() {
@@ -224,6 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => console.error('Error fetching disclaimer:', error));
 });
+
+// Function to handle scroll-to-top button
 function handleScrollToTop() {
   const scrollToTopBtn = document.getElementById('scroll-to-top-btn');
 

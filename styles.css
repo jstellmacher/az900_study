@@ -15,77 +15,79 @@ body {
 
 /* Navigation -------------------------------------------------------------*/
 nav {
-  width: 7vw; /* Adjust width for more space for navigation */
-  background-color: #0078d4; /* Azure Blue */
-  padding: 10px;
-  border-radius: 0 10px 10px 0; /* Slightly rounded corners */
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.715); /* Soft shadow effect */
-}
-
-.icon-bar {
-  margin-bottom: auto; /* Pushes icon-bar to the top */
-  margin-top: 8vh;
-  position: fixed;
-  z-index: 100;
-  transition: width 0.2s ease; /* Smooth transition for collapse */
-}
-
-.icon-bar a {
-  display: block; /* Make the links appear below each other */
-  text-align: center; /* Center-align text */
-  padding: 16px; /* Add some padding */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
-  color: #ffffff; /* White text color */
-  font-size: 24px; /* Slightly smaller font-size for icons */
-  margin-bottom: 10px; /* Space between icons */
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.916); /* Soft shadow effect */
-  background-color: #0078d4;
-}
-
-.icon-bar a:hover {
-  background-color: #005a9e; /* Darker Azure Blue on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
-}
-
-.icon-bar a.active {
-  background-color: #005a9e; /* Azure Blue for active link */
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.688); /* Soft shadow effect */
-}
-
-/* Toggle Button -------------------------------------------------------------*/
-.toggle-btn {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-  font-size: 30px;
-  cursor: pointer;
-  color: #ffffff;
-  padding: auto;
-  border: none;
-  background-color: #005a9e;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  width: 7vw;
-}
-
-.toggle-btn:hover {
-  background-color: #0078d4;
-  color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  border: none;
-}
-
-.toggle-btn:focus {
-  outline: none; /* Remove focus outline */
-}
-
-.toggle-btn:active {
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
-  background-color: rgb(255, 0, 0);
-}
+    width: calc(7vw + 2px); /* Adjust width for more space for navigation */
+    background-color: #0078d4; /* Azure Blue */
+    padding: 10px;
+    border-radius: 0 10px 10px 0; /* Slightly rounded corners */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.715); /* Soft shadow effect */
+  }
+  
+  .icon-bar {
+    width: 7vw; /* Fixed width for icon bar */
+    margin-bottom: auto; /* Pushes icon-bar to the top */
+    margin-top: 8vh;
+    position: fixed;
+    z-index: 100;
+    transition: width 0.2s ease; /* Smooth transition for collapse */
+  }
+  
+  .icon-bar a {
+    display: block; /* Make the links appear below each other */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    color: #ffffff; /* White text color */
+    font-size: 24px; /* Slightly smaller font-size for icons */
+    margin-bottom: 10px; /* Space between icons */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.916); /* Soft shadow effect */
+    background-color: #0078d4;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #005a9e; /* Darker Azure Blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+  }
+  
+  .icon-bar a.active {
+    background-color: #005a9e; /* Azure Blue for active link */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.688); /* Soft shadow effect */
+  }
+  
+  /* Toggle Button -------------------------------------------------------------*/
+  .toggle-btn {
+    width: 7vw; /* Fixed width for toggle button */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: auto;
+    border: none;
+    background-color: #005a9e;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .toggle-btn:hover {
+    background-color: #0078d4;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .toggle-btn:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  .toggle-btn:active {
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 0, 0);
+  }
+  
 
 /* Collapsed Navigation -------------------------------------------------------------*/
 nav.collapsed {
