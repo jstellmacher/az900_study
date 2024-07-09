@@ -87,7 +87,6 @@ nav {
   outline: none; /* Remove focus outline */
 }
 
-
 #toggle-btn {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -108,13 +107,16 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .toggle-btn.active::after {
-    content: ""; /* Empty content */
-  }
+  content: ""; /* Empty content */
+}
 /* Collapsed Navigation -------------------------------------------------------------*/
 nav.collapsed {
   width: 0px; /* Collapsed width */
   background-color: rgba(255, 255, 255, 0);
   box-shadow: none;
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
 nav.collapsed .icon-bar a {
@@ -146,7 +148,8 @@ nav.collapsed .icon-bar a {
   font-weight: 500; /* Medium font weight */
 }
 
-/* Accordion -------------------------------------------------------------*/
+
+
 /* Accordion -------------------------------------------------------------*/
 #accordion-container {
   margin-top: 20px; /* Add margin to create space between headings and content */
@@ -392,4 +395,118 @@ nav.collapsed .icon-bar a {
   background-color: #0057b300;
   color: white;
   box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.7);
+}
+/* Responsive Design for smaller screens -------------------------------------------------------------*/
+@media (max-width: 375px) {
+  nav {
+    position: fixed; /* Make the nav fixed */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .icon-bar {
+    position: fixed; /* Make the icon-bar fixed */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    margin: 0px;
+    display: inline-block;
+    width: auto;
+    margin-left: 30%;
+  }
+
+  .icon-bar a {
+    font-size: 20px; /* Slightly smaller icons */
+    text-align: center;
+    width: 30px; /* Adjust the width to be more suitable */
+    display: inline-block; /* Ensure the links are inline */
+    padding: 10px; /* Add some padding for better touch area */
+    margin: 0 8px; /* Add margin between icons */
+  }
+
+  .toggle-btn {
+    width: 30px;
+    font-size: 20px;
+  }
+  #toggle-btn.active {
+    width: auto;
+    box-shadow: none;
+  }
+
+  .content {
+    padding: 10px;
+    margin-top: 100px; /* Add margin to push the content below the fixed elements */
+  }
+
+  .accordion {
+    font-size: 16px;
+  }
+
+  .panel {
+    padding: 10px;
+  }
+}
+/* Styles for devices between 375px and 640px */
+@media only screen and (min-width: 376px) and (max-width: 660px) {
+  /* Add your CSS rules here */
+
+  nav {
+    position: fixed; /* Make the nav fixed */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .icon-bar {
+    position: fixed; /* Make the icon-bar fixed */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    margin: 0px;
+    display: inline-block;
+    width: auto;
+    margin-left: 40%;
+  }
+
+  .icon-bar a {
+    font-size: 20px; /* Slightly smaller icons */
+    text-align: center;
+    width: 30px; /* Adjust the width to be more suitable */
+    display: inline-block; /* Ensure the links are inline */
+    padding: 10px; /* Add some padding for better touch area */
+    margin: 0 8px; /* Add margin between icons */
+  }
+
+  .toggle-btn {
+    width: 30px;
+    font-size: 20px;
+  }
+  #toggle-btn.active {
+    width: auto;
+    box-shadow: none;
+  }
+
+  .content {
+    padding: 10px;
+    margin-top: 100px; /* Add margin to push the content below the fixed elements */
+  }
+
+  .accordion {
+    font-size: 16px;
+  }
+
+  .panel {
+    padding: 10px;
+  }
+}
+/* ------------------------------------------------------------------------ */
+@media (min-width: 661px) {
+    .icon-bar a{
+        text-align: center;
+        font-size: 30px;
+        padding: 2px;
+        margin: 2px;
+        margin-bottom: 16px;
+    }
 }
